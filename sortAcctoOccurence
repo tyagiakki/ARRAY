@@ -1,0 +1,26 @@
+public class printacctooccurence {
+	public static void according(int arr[],int n) {
+		boolean num[]=new boolean[n];
+		for(int i=0;i<n;i++) {
+			num[i]=false;
+		}
+		for(int i=0;i<n;i++) {
+			if(!num[i]) {
+				System.out.print(arr[i]);
+			
+			for(int j=i+1;j<n;j++) {
+				if(arr[i]==arr[j]) {
+					System.out.print(arr[j]);
+					num[j]=true;
+				}
+			}}
+		}}
+    public static void main(String[] args) {
+	int arr[]= {2,3,2,4,1,2,3};
+	int n=arr.length;
+	according( arr, n);
+	//System.out.print(according(arr,n));
+	
+}
+}
+//OUTPUT:-{2 2 2 3 3 4 1}
