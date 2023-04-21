@@ -1,0 +1,26 @@
+package ARRAY;
+
+public class subarraySumequalsToK {
+	public static void main(String[] args) {
+		int arr[]={9, 4, 20, 3, 10, 5};
+		int n=arr.length;
+		             //res initialise which gives the total number of subarrays....
+		int res=0;
+		int k=33;
+		for(int i=0;i<n;i++) {
+			           //Initialise sum with 0
+			int sum=0;
+			for(int j=i;j<n;j++) {
+				         //calculated sum
+				sum+=arr[j];
+				         //check if sum equals to k
+				if(sum==k) {
+				       	//increment res which totally gives
+					     //the number of subarray equals to k
+					res++;
+					}
+				}
+		}
+		System.out.println(res);
+	}
+}
