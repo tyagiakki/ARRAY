@@ -1,0 +1,21 @@
+package XXYY;
+
+public class missingelement {
+	public static int missing(int arr[],int n) {
+		int sum=n*(n+1)/2;
+		int result=0;
+		for(int i=0;i<n-1;i++) {
+			result=result+arr[i];
+		}
+		int c=sum-result;
+		return c;
+	}
+public static void main(String[] args) {
+	int arr[]= {1,2,3,4,5,7,8,9};
+	int n=arr.length;
+	missing(arr,n);
+	System.out.println(missing(arr,n));
+}
+}
+//OUTPUT:-
+6
