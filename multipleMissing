@@ -1,0 +1,21 @@
+package XXYY;
+
+public class multipleMissing {
+	public static void main(String[] args) {
+		int arr[]= {1,2,3,3,2,7,7,7};
+		//int n=arr.length;
+		int result[]=new int[arr.length];
+		for(int i:arr) {
+			result[i]=1;
+		}
+		for(int i=1;i<result.length;i++) {
+			if(result[i]==0){
+				System.out.println("Missing numbers are: "+i);
+			}
+		}
+	}
+}
+//OUTPUT:-
+Missing numbers are: 4
+Missing numbers are: 5
+Missing numbers are: 6
